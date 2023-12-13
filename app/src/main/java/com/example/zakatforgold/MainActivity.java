@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(v == fabShare){
             Intent sendIntent = new Intent(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "www.google.com");
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "https://github.com/Awan2001/Zakat-Gold-Calculator");
             sendIntent.setType("text/plain");
             sendIntent.putExtra(Intent.EXTRA_TITLE,"Github Repository");
 

@@ -25,7 +25,7 @@ public class about extends AppCompatActivity {
         gitHub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://github.com/Awan2001");
+                gotoUrl("https://github.com/Awan2001/Zakat-Gold-Calculator");
             }
         });
     }
