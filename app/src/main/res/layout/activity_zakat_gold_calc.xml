@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zakatGoldCalc">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="699dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:hint="Weight in gram(g)"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etGoldVal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:hint="Current gold value(RM)"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="223dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/et_bg">
+
+            <TextView
+                android:id="@+id/tvInformUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Select type of Gold"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rbKeep"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:text="Keep" />
+
+            <RadioButton
+                android:id="@+id/rbWear"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Wear" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bt_bg"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:text="Calculate" />
+
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/calc_out"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTotVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Total value of the gold: "
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvOutTotVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:height="20dp"
+                android:background="@drawable/et_bg"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvGoldPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Total Gold Value Zakat Payable:"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvOutGoldPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:height="20dp"
+                android:background="@drawable/et_bg"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvTotZakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Total Zakat:"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvOutTotZakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginBottom="10dp"
+                android:height="20dp"
+                android:background="@drawable/et_bg"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bt_bg"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:text="Reset" />
+
+    </LinearLayout>
+</RelativeLayout>
